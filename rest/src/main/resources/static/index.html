@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CRUD Demo</title>
+</head>
+<body>
+<h2>Ver artículos</h2>
+<button id="show-articles-btn">Mostrar Artículos</button>
+<div id="articles-container"></div>
+
+<h2>Escribir un artículo</h2>
+<form id="article-form">
+    <label for="title-input">Título:</label>
+    <input type="text" id="title-input" name="title"><br>
+    <label for="content-input">Contenido:</label>
+    <textarea id="content-input" name="content"></textarea><br>
+    <button type="submit">Enviar</button>
+</form>
+
+<h2>Actualizar un artículo</h2>
+<form id="article-form-update">
+    <label for="id-input">ID:</label>
+    <input type="number" id="id-input" name="id"><br>
+    <label for="title-input-update">Título:</label>
+    <input type="text" id="title-input-update" name="title"><br>
+    <label for="content-input-update">Contenido:</label>
+    <textarea id="content-input-update" name="content"></textarea><br>
+    <button type="submit">Enviar</button>
+</form>
+
+<h2>Eliminar un artículo</h2>
+<form id="article-form-delete">
+    <label for="id-input-delete">ID:</label>
+    <input type="number" id="id-input-delete" name="id"><br>
+    <button type="submit">Eliminar</button>
+</form>
+
+<!-- Vincular el archivo JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>
