@@ -11,3 +11,6 @@ En resumen, ChemestryWebSENA es una aplicación web para la gestión de un blog 
 - IntelliJ IDEA Community Edition [Clic aquí](https://www.jetbrains.com/idea/download/#section=windows)
 
 - PostgreSQL 15.2 [Clic aquí](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
+# Instrucciones
+Después de compilar el proyecto, para acceder al HTML, se debe ingresar a la siguiente URL 127.0.0.1:8080/index.html.
