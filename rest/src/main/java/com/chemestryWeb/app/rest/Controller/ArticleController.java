@@ -20,7 +20,7 @@ public class ArticleController {
      */
     @GetMapping(value = "/")
     public String holaMundo(){
-        return "Hola Mundo!!!";
+        return "Hola Mundo!!! <br> Ingresa '/index.html' al final de la url para acceder al blog";
     }
 
     /**

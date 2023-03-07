@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+:root {
+    --color-accent : #48dbfb;
+    --color-second: #0abde3;
+    --color-gray : #1a1a1a;
+    --color-gray2 : #555555;
+    --color-gray3 : #c4c4c4;
+    --color-gray4 : #F0F0F0;
+    --color-error : #f25555;
+    --font-logo : 'Fredericka the Great', cursive;
+    --primary-font : 'Source Sans 3', sans-serif;
+    --second-font : 'Overpass', sans-serif;
+}
+
+.header_home {
+    height: 6rem;
+    background-color: var(--color-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_home span {
+    font-size: 45px;
+    font-family: var(--font-logo);
+    color: black;
+}
+
+.h2 {
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+}
+
+.button {
+    margin-top: 1rem;
+    margin-left: 7.5%;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    background-color: var(--color-gray);
+    padding: .5rem;
+    border: none;
+    font-family: var(--primary-font);
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+
+.articles-container {
+    margin-top: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.id {
+    border-top: solid black .1rem;
+    padding-top: .5rem;
+    font-size: 1.6rem;
+    margin-bottom: .75rem;    
+}
+
+.articles-container h2 {
+    font-size: 3rem;
+    margin-bottom: .75rem;    
+}
+
+.articles-container p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;    
+}
+
+.form {
+    margin-left: 10%;
+}
+
+.label {
+    font-size: 1.8rem;
+}
+
+.input { 
+    font-size:16px; 
+    padding:5px;
+    margin-bottom: .75rem; 
+    border-width:2px; 
+    border-radius:10px; 
+    border-style:solid; 
+    border-color:#00aade; 
+    box-shadow: 2px 2px 5px 0px rgba(42,42,42,.75);  
+}
+.input:focus { 
+    outline:none; 
+} 
+
+.button-form {
+    margin-left: 0;
+}

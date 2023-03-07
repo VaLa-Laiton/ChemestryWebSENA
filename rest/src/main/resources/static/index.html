@@ -5,37 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API CRUD Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Overpass:wght@300;500;700&family=Source+Sans+3:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css" integrity="sha512-W4KOSUNkQhX7JkalSiTkwAIoqsAvxDdgRc/WAa5U0R2TKTpHnNZuf9AiBk8InN4GCAMwer+O9fe4ThxIQFkOGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Ver artículos</h2>
-<button id="show-articles-btn">Mostrar Artículos</button>
-<div id="articles-container"></div>
+<header class="header_home">
+    <span>Quimica</span>
+</header>
 
-<h2>Escribir un artículo</h2>
-<form id="article-form">
-    <label for="title-input">Título:</label>
-    <input type="text" id="title-input" name="title"><br>
-    <label for="content-input">Contenido:</label>
-    <textarea id="content-input" name="content"></textarea><br>
-    <button type="submit">Enviar</button>
+<!-- Recuerda que tendra que borrar todo lo que hagas dentro de articles container, adicional a eso, recuerda que no puede ponerle clases a ninguno de los hijos -->
+
+<h2 class="h2">Ver artículos</h2>
+<button id="show-articles-btn" class="button">Mostrar Artículos</button>
+<div id="articles-container" class="articles-container"></div>
+
+<h2 class="h2">Escribir un artículo</h2>
+<form id="article-form" class="form">
+    <label for="title-input" class="label">Título:</label>
+    <input type="text" id="title-input" name="title" class="input"><br>
+    <label for="content-input" class="label">Contenido:</label>
+    <textarea id="content-input" name="content" class="input"></textarea><br>
+    <button type="submit" class="button button-form">Enviar</button>
 </form>
 
-<h2>Actualizar un artículo</h2>
-<form id="article-form-update">
-    <label for="id-input">ID:</label>
-    <input type="number" id="id-input" name="id"><br>
-    <label for="title-input-update">Título:</label>
-    <input type="text" id="title-input-update" name="title"><br>
-    <label for="content-input-update">Contenido:</label>
-    <textarea id="content-input-update" name="content"></textarea><br>
-    <button type="submit">Enviar</button>
+<h2 class="h2">Actualizar un artículo</h2>
+<form id="article-form-update" class="form">
+    <label for="id-input" class="label">ID:</label>
+    <input type="number" id="id-input" name="id" class="input"><br>
+    <label for="title-input-update" class="label">Título:</label>
+    <input type="text" id="title-input-update" name="title" class="input"><br>
+    <label for="content-input-update" class="label">Contenido:</label>
+    <textarea id="content-input-update" name="content" class="input"></textarea><br>
+    <button type="submit" class="button button-form">Enviar</button>
 </form>
 
-<h2>Eliminar un artículo</h2>
-<form id="article-form-delete">
-    <label for="id-input-delete">ID:</label>
-    <input type="number" id="id-input-delete" name="id"><br>
-    <button type="submit">Eliminar</button>
+<h2 class="h2">Eliminar un artículo</h2>
+<form id="article-form-delete" class="form">
+    <label for="id-input-delete" class="label">ID:</label>
+    <input type="number" id="id-input-delete" name="id" class="input"><br>
+    <button type="submit" class="button button-form">Eliminar</button>
 </form>
 
 <!-- Vincular el archivo JavaScript -->
